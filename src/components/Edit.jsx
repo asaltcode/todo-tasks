@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from 'react';
-import { useNavigate, useParams, Link } from 'react-router-dom';
+import { useNavigate, useParams } from 'react-router-dom';
 
 const Edit = ({task, setTask}) => {
   let navigate = useNavigate()
@@ -66,9 +66,7 @@ const Edit = ({task, setTask}) => {
                 <button type="button" onClick={()=> handleEdit()} className="btn btn-info mt-3">
                   Save Todo
                 </button> &nbsp;
-                <button type="button" onClick={()=> handleDerection()} className="btn btn-warning mt-3">
-                  <Link to={'all'}>Cancel Todo</Link>
-                </button>
+                <button type="button" onClick={()=> navigate('/home/all')} className="btn btn-warning mt-3">Cancel Todo</button>
               </div>
             </div>
           </div>
