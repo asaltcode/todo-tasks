@@ -1,0 +1,16 @@
+{
+    "rewrites": [
+        {
+            "source": "/(.*)",
+            "destination": "/"
+        }
+    ],
+    "source": "/edit/:id",
+    "destination": "/edit/:id",
+    "git": {
+        "deploymentEnabled": {
+          "main": false
+        }
+      }
+    
+}
